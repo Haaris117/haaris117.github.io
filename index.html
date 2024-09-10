@@ -1,167 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design.css">
     <script src="app.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="cycle2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>MiniBlog archive</title>
 </head>
+
 <body>
-    <header id="main-header">
-        <!-- header content here -->
-         <h1 id="logo"> BrightBlog over here! </h1>
-         <nav>
-            <ul id="nav-ul">
-                <li><a href="" class="navbutton">Home</a></li>
-                <li><a href="" class="navbutton">About us</a></li>
-                <li><a href="" class="navbutton">Contact</a></li>
-            </ul>
-         </nav>
-    </header>
-    <main>
-        <!-- main stuff here -->
-        <div id="main-content">
-            <aside>
-                <section>
-                    <h4>Filter by month</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Filter for a</a></li>
-                            <li><a href="">Filter for b</a></li>
-                            <li><a href="">Filter for c</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by category</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="">dog</a></li>
-                            <li><a href="">cat</a></li>
-                            <li><a href="">bird</a></li>
-                            <li><a href="">shoe</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </aside>
+    <div id="grid-container">
+        <!-- top of the table-->
+        <header id = "main-header">
+            <div id="column-1">
+                <h1 id = "webpage-title"> MiniBlog Archive </h1>
+                <p> An archive of random things</p>
+                <nav>
+                    <ul id="nav-ul">
+                        <li><a href="" class="navbutton">Home</a></li>
+                        <li><a href="" class="navbutton">Blog Updates</a></li>
+                        <li><a href="" class="navbutton">About</a></li>
+                        <li><a href="" class="navbutton">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>    
             
-            <div>
-                <article>
-                    <header>
-                        <h2>TEN DOGGOS</h2>
-                        <h3>read time: 5 mins</h3>
-                    </header>
-                    <main>
-                        <p>doggo 1</p>
-                        <p>doggo the 2nd</p>
-                        <p>kittyo</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores optio praesentium architecto dolor ipsam numquam cum. Vero aliquid sint magnam illo ipsam impedit? Vitae consectetur necessitatibus reiciendis dolore dolorem sed minus debitis fugiat quasi! Consectetur hic praesentium, tempora esse neque labore. Id quibusdam nulla aliquid eius, accusantium ab tenetur reprehenderit ipsam eaque vero voluptatum similique eum. Magni dolorem libero distinctio, provident cum, cupiditate porro adipisci beatae quaerat suscipit ullam facilis, corrupti in ab. Quae, mollitia sit facilis eaque, similique dolor, placeat nulla cum amet sequi inventore adipisci. Laborum, amet, sapiente corporis, sequi in atque excepturi quos similique deleniti sint aliquid!</p>
-                        <blockquote>
-                            "me like doggo" - <cite><a href="">myself</a>, 100</cite>
-                        </blockquote>
-                    </main>
-                    <footer>
-                        <h2>Author: me myself and i</h2>
-                        <img src="https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=100x100" alt="potato">
-                        <h3>last posted: today</h3>
-                        <a href="https://www.google.com/" target="_blank">google</a>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2>Ten doggos</h2>
-                        <h3>read time: 5 mins</h3>
-                    </header>
-                    <main>
-                        <p>doggo 1</p>
-                        <p>doggo the 2nd</p>
-                        <p>kittyo</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores optio praesentium architecto dolor ipsam numquam cum. Vero aliquid sint magnam illo ipsam impedit? Vitae consectetur necessitatibus reiciendis dolore dolorem sed minus debitis fugiat quasi! Consectetur hic praesentium, tempora esse neque labore. Id quibusdam nulla aliquid eius, accusantium ab tenetur reprehenderit ipsam eaque vero voluptatum similique eum. Magni dolorem libero distinctio, provident cum, cupiditate porro adipisci beatae quaerat suscipit ullam facilis, corrupti in ab. Quae, mollitia sit facilis eaque, similique dolor, placeat nulla cum amet sequi inventore adipisci. Laborum, amet, sapiente corporis, sequi in atque excepturi quos similique deleniti sint aliquid!</p>
-                        <blockquote>
-                            "me like doggo" - <cite>myself, 100</cite>
-                        </blockquote>
-                    </main>
-                    <footer>
-                        <h2>Author: me myself and i</h2>
-                        <img src="https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=100x100" alt="potato">
-                        <h3>last posted: today</h3>
-                        <a href="https://www.google.com/" target="_blank">google</a>
-                    </footer>
-                </article>
+            <div id="column-2">
+                <h4>Sign-in:</h2>
+                <form action="">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                    
+                    <div id="login-links">
+                        <input type="submit" value="Sign-in">
+                        <a href="">Sign-up</a>
+                    </div>
+                    
+                    
+                </form>
+                
+            </form>
             </div>
-        </div>
-        
+            
 
+        </header>
 
+        <!-- middle of the table-->
         
-        <hr>
-        <h2>sign up for news letter
-        </h2>
-        <form action="" method="">
-            <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" id="first_name" required>
-            <br>
-            <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" id="last_name" required>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-            <br>
-            <label for="favourite_animal">favourite animal</label>
-            <input type="radio" name="favourite_animal" id="dog" value="dog">
-            <label for="dog">Dog</label>
-            <input type="radio" name="favourite_animal" id="cat" value="cat">
-            <label for="cat">Cat</label>
-            <input type="radio" name="favourite_animal" id="bird" value="bird">
-            <label for="bird">Bird</label>
-            <input type="radio" name="favourite_animal" id="shoe" value="shoe">
-            <label for="shoe">Shoe</label>
-            <br>
-            <label for="country">Country:</label>
-            <select name="country" id="country">
-                <option value="england">England</option>
-                <option value="scotland">Scotland</option>
-                <option value="wales">Wales</option>
-                <option value="northern_ireland">Northern Ireland</option>
-            </select>
-            <br>
-            <label for="bio">Biography</label>
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-            <br>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">subscribe to newsletter</label>
-            <br>
-            <input type="submit" value="send">
-        </form>
-        <hr>
-    </main>
-    <footer>
-        <!-- foot here  -->
-         <h2>BrightBlogsite</h2>
-         <section>
-            <nav>
-                <ul id="footer-ul">
-                    <div>
-                        <li><a href="">home</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">contact</a></li>
-                        <li><a href="">careers</a></li>
-                    </div>
-                    <div>
-                        <li><a href="">privacy poilicy</a></li>
-                        <li><a href="">terms and conditions</a></li>
-                        <li><a href="">cookie poilicy</a></li>
-                    </div>
-                </ul>
-            </nav>
-         </section>
-    </footer>
+        <!-- navigation side bar-->
+        <aside id = "heading-navigation">
+            <section>
+                        <h5> Headings </h5>
+                        <nav id = "sidebar-nav">
+                            <ul>
+                                <li><a href="#How-to"> How to navigate website </a></li>
+                                <li><a href="#catpic"> Funny cat picture </a></li>
+                                <li><a href="#game"> New game available to download </a></li>
+                            </ul>
+                        </nav>
+            </section>
+        </aside>
+        <!-- writeable content-->
+        <main id = "main-body">
+                    <!-- Navigation heading -->
+                    <article id="How-to">
+                        <header>
+                            <h5> How to navigate the website: </h5>
+                        </header>
+                        <main>
+                            <p> Scroll up or down to view the webpage and click the headings on the side to jump to different headings. </p>
+                        </main>
+                        <footer></footer>
+                    </article>
+
+                    <!-- Funny cat picture -->
+                    <article id="catpic">
+                        <header> <h5>Here is a funny cat picture</h5> </header>
+                        <body>
+                            <img src="https://cataas.com/cat" alt="funny cat picture" id="cat">
+                        </body>
+                        <footer></footer>
+                    </article>
+
+                    <article id="game">
+                        <header> <h5>New game available to download</h5> </header>
+                        <main>
+                            <p> Here is a new game I have created called, "KnightRun": 
+                            <br> Play as a knight, that runs, (hence the title) and reach the goal. Here are some sprites used for the game</p>
+                            <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover = "true">
+
+                                <span class="cycle-prev">&laquo;</span>
+                                <span class="cycle-next">&raquo;</span>
+                                <span class="cycle-pager"></span>
+
+                                <div class="slide">
+                                    <img src="Player.png" alt="Protagonist">
+                                    <p> The Hero! </p>
+                                </div>
+                                <div class="slide">
+                                    <img src="EnemyKnight.png" alt="EnemyKnight">
+                                    <p> The Enemy Knight! </p>
+                                </div>
+                                <div class="slide">
+                                    <img src="Slime.png" alt="Slime">
+                                    <p> The Slime! </p>
+                                </div>    
+                            </div>
+                        </main>
+                        <footer> 
+                            <p> <a href="">Click here to downlaod the game</a> 
+                                This link will take you to the download page on Gamejolt, don't click if you don't trust the website.
+                            </p>    
+                        </footer>
+                    </article>
+        </main>
+
+        <footer id = "main-footer">
+            <!-- Footer here, bottom of the table -->
+            <section>
+                <nav>
+                    <ul id = "footer-id">
+                        <li><a href="">Privacy Poilicy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Cookie Poilicy</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </footer>
+    </div>
 </body>
-</html>
