@@ -17,26 +17,39 @@ body{
 
 #column-1{
     flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 0.5vw;
 }
 
 #webpage-title{
     margin: 0px;
+    margin-left: 5px;
+    font-size: 4vw;
     align-self: flex-start;
     color: #708871;
 }
 
 #main-header > div > p{
-    margin: 0px 0px 9vw 0px;
+    margin: 0px 0px 0vw 5px;
     color: #708871;
+    font-size: 1.5vw;
 }
 
 #nav-ul{
-    margin: 4px 0px 3px 0px;
+    margin: 1vw 0vw 0.1vw 0px;
     padding: 0px;
     list-style: none;
     align-self: flex-end;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+}
+
+#nav-ul > li{
+    margin-right: 1vw;
+    align-self: flex-end;
+    height: auto;
+    width: auto;
 }
 
 
@@ -44,8 +57,9 @@ body{
     text-decoration: none;
     color: #708871;
     background-color: #ded7cc;
-    margin-top: 8px;
     padding: 8px 8px 4px 8px;
+    font-size: 2vw;
+    
     transition-property: color, background-color;
     transition-duration: 1s;
     font-weight: 500;
@@ -59,43 +73,54 @@ body{
 #column-2
 {
     flex-direction: column;
+    justify-content: flex-end;
     display: flex;
+    
 }
 
 #column-2 > h4{
     align-self: flex-start;
     margin-bottom: 1vw;
     margin-top: 2vw;
+    font-size: 1vw;
 }
 
 #column-2 > form{
     display: flex;
     flex-direction: column;
+    font-size: 1vw;
 }
 
 #column-2 > form > label{
     align-self: flex-start;
     margin: 0;
+    font-size: 1vw;
 }
 
 #column-2 > form > input{
     align-self: flex-end;
     margin: 0;
+    font-size: 1vw;
 }
 
 #login-links{
     display: flex;
     justify-content: space-between;
+    font-size: 1vw;
 }
 
 #login-links > input {
     align-self: flex-start;
+    font-size: 1.2vw;
+    height: 2vw;
+    width: 6vw;
+    
 }
 
 #login-links > a{
     align-self: flex-end;
     margin: 0px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     
 }
 
@@ -115,8 +140,8 @@ body{
 }
 
 #heading-navigation > section > h5{
-    margin: 4px 0px 4px 0px;
-    font-size: 2.5vw;
+    margin: 4px 0px 4px 0.5vw;
+    font-size: 2vw;
     color: #FEF3E2;
     font-weight: 500;
 }
@@ -124,25 +149,32 @@ body{
 #sidebar-nav > ul{
     margin: 0px;
     padding: 0px;
+    
     list-style: none;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
+
 }
 
 #sidebar-nav > ul > li
 {
     margin: 0px 0px 4px 0px;
-    vertical-align: middle;
+    vertical-align: centre;
+
     
 }
 
 #sidebar-nav > ul > li > a{
+    
     text-decoration: none;
     display: flex;
+    padding-left: 0.5vw;
     color: #FEF3E2;
     font-weight: 300;
     background-color: #4e604f;
-    font-size: 1.8vw;
+    height: 4.5vw;
+    font-size: 1.5vw;
     transition-property: color, background-color;
     transition-duration: 1s;
 }
@@ -165,7 +197,7 @@ body{
 }
 
 #main-body h5{
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 4px 0px 4px 1px;
     color: #296a2c;
     font-weight: 600;
@@ -182,7 +214,7 @@ body{
 #How-to > main > p
 {
     margin: 4px 0px 4px 3px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     color: #2b3e72;
 }
@@ -203,19 +235,19 @@ body{
 
 #game > main > p{
     margin: 4px 0px 1vw 3px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     color: #2b3e72;
 }
 
 #game > footer > p{
     color: #2b3e72;
-    margin: 10vw 0px 4px 3px;
-    font-size: 2vw;
+    margin: 0vw 0px 4px 3px;
+    font-size: 1.5vw;
 }
 
 .cycle-slideshow{
-    margin-bottom: 9vw;
+    margin-bottom: 7vw;
 }
 
 .slide {
@@ -292,14 +324,17 @@ body{
 #main-footer{
     background-color: #606676;
     height: 20vw;
+    align-self: center;
+    align-items: center;
 }
 
 #footer-id{
-    margin: 10px 5px 0px 5px;
+    margin: 4vw 5px 0px 5px;
     padding: 10px 0px 0px 0px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    column-gap: 3vw;
     
 }
 
@@ -309,6 +344,7 @@ body{
     padding: 10px 10px 10px 10px;
     color: whitesmoke;
     transition-property: color, background-color;
+    font-size: 1.5vw;
     transition-duration: 1s;
 }
 
