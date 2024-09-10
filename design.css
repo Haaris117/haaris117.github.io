@@ -277,17 +277,17 @@ body{
     position: absolute;
     background-color: rgba(0,0,0,0.35);
     color: white;
-    top: 50%;
+    top: 45%;
     padding: 1px 1px;
     display: block;
     cursor: pointer;
-    font-size: 70%;
+    font-size: 3vw;
     z-index: 1000;
     transition: opacity 0.5s;
 }
 
 .cycle-next{
-    left: 38.8vw;
+    left: 38.5vw;
 }
 
 .cycle-slideshow:hover .cycle-prev,
@@ -299,8 +299,9 @@ body{
     position: absolute;
     top: 10px;
     z-index: 1003;
-    width: 100%;
-    left: 15vw;
+    width: 5vw;
+    height: 1vw;
+    left: 18vw;
 }
 
 .cycle-pager span {
